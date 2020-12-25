@@ -1,13 +1,8 @@
 import { css, customElement, html, LitElement, property, svg } from 'lit-element';
+import { RGB } from './types/rgb';
 
 const pixelWidth = 5.66;
 const pixelHeight = 5;
-
-export interface RGB {
-  r: number;
-  g: number;
-  b: number;
-}
 
 /**
  * Renders a matrix of NeoPixels (smart RGB LEDs).
